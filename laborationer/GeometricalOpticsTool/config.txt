@@ -1,0 +1,20 @@
+Screen properties:
+width=1200
+height=700
+
+LightProperties:
+minwavelength=400
+maxwavelength=700
+defaultwavelength=700
+maxcolorraycount=10
+
+Interaction:
+propertytextfields=true
+maxobjectsizecm=15
+
+Performance callibration:
+opticsobjectresolution=500
+maxraybounce=10
+
+Admin:
+admin=false

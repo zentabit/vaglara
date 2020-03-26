@@ -1,0 +1,165 @@
+% Laborationsmall.tex
+\documentclass[a4paper]{article}
+
+\usepackage[swedish]{babel}
+\usepackage[utf8x]{inputenc}
+
+\usepackage{multicol}
+\usepackage[vmargin=3cm,hmargin=2cm]{geometry}
+\usepackage{parskip}
+\usepackage[runin]{abstract}
+\renewcommand{\abstitleskip}{0mm}
+
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+
+\usepackage{graphicx}
+\usepackage{ccaption}
+\captionnamefont{\it}
+\captiontitlefont{\it}
+
+% Hack för att få komma istället för punkt i matematiska uttryck
+% $3.141592$ blir 3,141592
+% Om man använder komma direkt får man ett litet oönskat mellanrum:
+% $3,141592$ blir 3, 141592
+\DeclareMathSymbol{,}{\mathpunct}{letters}{"3B}
+\DeclareMathSymbol{.}{\mathord}{letters}{"3B}
+\DeclareMathSymbol{\decimal}{\mathord}{letters}{"3A}
+
+% Kommando för att få icke-kursiva enheter i matematiska uttryck
+% $10\unit{km}$ blir 10 km
+\newcommand{\unit}[1]{\ensuremath{\,\mathrm{#1}}}
+
+\usepackage{lastpage}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf[C]{\thepage}
+\fancyhead[C]{Våglära och optik, FAFF30}
+\fancyhead[R,L]{}
+\fancypagestyle{plain}{
+  \fancyhead{}
+}
+\setcounter{secnumdepth}{-1}
+
+\title{Laborationen ”Polarisation”}
+\author{Johan Mauritsson\\Lunds Universitet}
+
+\makeatletter
+\renewcommand{\section}{\@startsection
+{section}%                   % the name
+{1}%                         % the level
+{0mm}%                       % the indent
+{-\baselineskip}%            % the before skip
+{0.5mm}%          % the after skip
+{\normalfont\bfseries}} % the style
+%\renewcommand{\sectionmark}[1]{ }
+%\renewcommand{\thesection}{}
+
+\renewcommand*\maketitle{
+  {
+    \begin{center}
+      {\huge\bfseries \@title}\\
+      \vspace{5mm}
+      {\large \@author}
+    \end{center}
+    \vspace{2mm}
+  }
+}
+\makeatother
+
+\begin{document}
+\maketitle
+
+
+\begin{abstract}
+  Kort beskrivning  av resultaten (5-10  rader). Det ska inte  vara en
+  innehållsbeskrivning (först gör vi det, sen använder vi den metoden,
+  och så jämför vi det med de där tidigare kända resultaten, etc) utan
+  vara   koncentrerat  till   ”resultatet”,   vad   man  kommer   fram
+  till. Sammanfattningen är uppsatsens löpsedel. Den ska vara kort och
+  kärnfull och locka läsare genom att  effektivt göra klart vad det är
+  man uppnår genom att läsa rapporten.
+\end{abstract}
+
+\vspace{2mm}
+
+\hspace{-3mm}
+\begin{tabular}{ll}
+Laborationen genomförd: &	2013-xx-xx \\
+Rapporten kamratgranskad: &	2013-xx-xx \\
+Lämnad till handledare: &	2013-xx-xx \\
+\end{tabular}
+
+\vspace{3mm}
+
+\begin{multicols}{2}
+  \section*{Inledning}
+  Preliminär beskrivning av uppgiften  i lättfattliga termer. Bakgrunden
+  till att man intresserar sig för detta problem, denna uppgift. Hur den
+  ingår i ett större sammanhang.
+
+  En detaljerad beskrivning av vad det hela går ut på, och vad exakt din
+  uppgift   i    sammanhanget   är.    Utrustningsförutsättningar.   Det
+  ursprungligen avsedda målet. Även den i ämnet oinsatte ska ha en ärlig
+  chans att förstå de stora dragen.
+
+  Beskrivning av hur rapporten är uppbyggd, för att göra det möjligt för
+  läsaren att förstå vad som  pågår, ge läsaren rätta förväntningar, och
+  för  att  underlätta direktåtkomst  av  för  den individuelle  läsaren
+  särskilt intressanta delar.
+
+  \section{Metod}
+  De  olika  stegen  i  uppgiftens genomförande.  Till  exempel  val  av
+  algoritmer,  programspråk och  annan programvara,  undersökningsmetod,
+  statistiska  metoder. Där  valmöjligheter finns,  diskutera de  gjorda
+  valen.
+
+  \section{Resultat}
+  Vad man  kommer fram till?  Om uppgiften innebär programmering  så kan
+  det färdiga programmet i sig vara resultatet.  Här är det i så fall på
+  sin  plats  med  beskrivningar  av programmet,  till  exempel  teknisk
+  beskrivning,    funktionell    beskrivning,    användningsbeskrivning,
+  användargränssnitt  etc.  Genomförandebeskrivning  kommer  i  så  fall
+  närmast att handla om programutvecklingen.
+
+  Men det kan också vara så  att det snarare är programmets beteende som
+  är resultatet.  Man utvecklar till  exempel en numerisk metod  för att
+  lösa ett problem,  och sedan gör man experiment  med testkörningar och
+  analyserar dessa test.
+
+  \section{Diskussion}
+  Är resultaten rimliga? Vad hade kunnat göras annorlunda?
+
+  \section{Slutsats/avslutning}
+  En   sammanfattning  där   man  till   skillnad  från   den  inledande
+  sammanfattningen förutsätter  att läsaren har läst  rapporten, samt de
+  slutsatser man kan dra av det gjorda arbetet.
+
+  \section{Referenser}
+  Den använda litteraturen.
+
+  \section{Appendix}
+  Eventuell     användarhandledning,     källkod,    anvisningar     för
+  systemgenerering, och liknande som inte  är av omedelbart intresse för
+  den ordinäre läsaren, läggs lämpligen som appendix.
+
+\end{multicols}
+
+\section{\LaTeX-kommentarer}
+Kompileras enklast med \texttt{pdflatex}. Använd TeX Live i Linux och
+MiKTeX i Windows.
+
+Test av ”komma-hack” och enhetskommando (se källkod):
+\hrule
+\begin{minipage}{0.5\linewidth}
+  Kod
+\begin{verbatim}
+\[ \Delta x = 1.23\unit{km} \]
+\end{verbatim}
+\end{minipage}
+\begin{minipage}{0.5\linewidth}
+  Resultat\\
+  $ \Delta x = 1.23\unit{km} $
+\end{minipage}
+
+\end{document}
