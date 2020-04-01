@@ -37,16 +37,28 @@ hold on
 grid on
 
 
-a = 4;
-r = 2;
-n = 1.5;
+a = 2;
+r = 1;
+n = 1.8;
 s = hypot(a, r);
 
 axis([-(a+2) (a+2) -(r+2) (r+2)])
 
-theta  = linspace(0, atan(r/a));
+theta  = linspace(0, atan(r/a), 1000);
 b = (s.*cos(theta) - a) ./ (n.*cos(theta)-1);
 h = (a-b).*tan(theta);
+
+for i = 1:199:1000
+    disp(i)
+    line([-a -b(i)], [0 h(i)])
+    line([-a -b(i)], [0 -h(i)])
+    line([-b(i) b(i)], [h(i) h(i)])
+    line([-b(i) b(i)], [-h(i) -h(i)])
+    line([b(i) a], [h(i) 0])
+    line([b(i) a], [-h(i) 0])
+    
+end
+
 plot(-b, h, 'r.');
 plot(b, h, 'r.');
 plot(-b, -h, 'r.');
