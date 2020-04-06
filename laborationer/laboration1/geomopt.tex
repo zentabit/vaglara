@@ -40,17 +40,17 @@
 \section{Inledning}
 \subsection{Introduktion och sammanfattning}
 I denna laboration har två optiska komponenters egenskaper och karaktäristik undersökts. Under laborationen har prismor
-och linser undersökts. Därutöver har kollimering och linjering diskuterats. Hela den experimentella delen har genomförts
+och linser undersökts. Därutöver har kollimering och linjering diskuterats och beskrivits. Hela den experimentella delen har genomförts
 digitalt i programmet Geometrical Optics Tool, skrivet av en tidigare student. Prismor och linser är optiska komponenter
 som spelar en viktig roll i vår vardag, exempelvis i kameror, glasögon, luppar med mera. Därför finns det god motivation 
 till att genomföra en laboration likt denna för att förstå optiska komponenters egenskaper.
 
-Avståndet till ljuskällan, placering på den optiska axel, rotation kring den optiska axeln och olika typer av avbildningsfel
+Avståndet till ljuskällan, placering på den optiska axeln, rotation kring den optiska axeln och olika typer av avbildningsfel
 har undersökts för linsen och kommer diskuteras i rapporten. Vad gäller prismor har man experimentellt försökt hitta minsta avlänkningsvinkel
 för olika våglängder.
 
-Sammanfattningsvis kan vi formulera en kort frågeställning: Hur beter sig linser i olika förhållanden, och hur kan man experimentellt beräkna minsta deviation
-för ett prisma?
+Sammanfattningsvis kan vi formulera en kort frågeställning: Hur beter sig linser i olika förhållanden, och hur kan man experimentellt beräkna minsta 
+deviation(avlänkningsvinkel) för ett prisma?
 
 Undersökningen har lett till följande slutsatser: Linser är känsliga optiska instrument som inte fokuserar rätt om vi avviker från optimala förhållanden,
 och drabbas lätt av avbildningsfel. Prismat hade i vårt fall hade en minsta deviation på runt \ang{60}. 
@@ -66,7 +66,7 @@ $\alpha$ är vinkeln mellan de brytande ytorna i prismat.
 och löser ut $\delta$, som vi söker. Detta ger ekvation \ref{eq: avl2}:
 \begin{equation}
     \label{eq: avl2}
-    \delta = 2 arcsin(n sin(\frac{\alpha}{2})) - \alpha
+    \delta = 2 arcsin(n sin\big(\frac{\alpha}{2}\big)) - \alpha
 \end{equation}
 Insättning av $n=1.57$ och $\alpha = \ang{60}$ ger $\delta = \ang{43.44}$.
 
@@ -74,7 +74,7 @@ Insättning av $n=1.57$ och $\alpha = \ang{60}$ ger $\delta = \ang{43.44}$.
 \subsection{Divergens hos en stråle}
 Divergensen hos en ljuskälla definieras som vinkeln hos ljuskonen som bildas när ljuset propagerar \cite{wiki}. Divergensvinkeln $\theta$ kan beräknas med ekvation \ref{eq: div}:
 \begin{equation}
-    \theta = 2 arctan(\frac{d_1 - d_2}{2l})
+    \theta = 2 arctan\Big(\frac{d_1 - d_2}{2l}\Big)
     \label{eq: div}
 \end{equation}
 Sambandet kan härledas om man iakttar en del av ljuskonen som är långt borta från alla fokus och utför lite trigonometri. Se figur \ref{fig:divergens}. $d_1$ och $d_2$
@@ -89,7 +89,7 @@ Sambandet kan härledas om man iakttar en del av ljuskonen som är långt borta 
 \subsection{Optiska komponenter}
 De optiska komponenter som används i laborationen är prismor och konvexa linser.
 \subsubsection{Prismor}
-Prismat är en komponent med platta genomskinliga ytor där ljuset kan passera . Vi tittar på triangulära prismor i denna laboration,
+Prismat är en komponent med platta genomskinliga ytor, där ljuset bryts då det propagerar. Vi tittar på triangulära prismor i denna laboration,
 där varje gränsyta följer Snells brytningslag, ekvation \ref{eq:brytning}\cite[p.202]{vl}. $n$ brytningsindex. $\alpha$ infalls-/brytningsvinkel.
 \begin{equation}
     n_1*sin(\alpha_1) = n_2*sin(\alpha_2)
@@ -97,7 +97,7 @@ där varje gränsyta följer Snells brytningslag, ekvation \ref{eq:brytning}\cit
 \end{equation}
 Varje gång en ljusstråle passerar igenom en gränsyta bryts det. I vårt fall bryts det mot normalen när det äntrar prismat, eftersom prismat är av glas och vi antar luft utanför.
 När det sedan lämnar prismat bryts det bort från normalen. Detta resulterar i att ljuset böjs av en viss vinkel jämfört med den ursprungliga riktningen. Denna vinkel kallas
-avlänkningsvinkeln, eller deviationen, som vi betecknar med $\delta$ . Den brytande kanten får också en egen vinkel, $\alpha$. Se figur \ref{fig:prism}.
+avlänkningsvinkeln, eller deviationen, som vi betecknar med $\delta$ . Den brytande kanten på prismat får också en egen vinkel, $\alpha$. Se figur \ref{fig:prism}.
 \begin{figure}[h!]
     \centering
     \includegraphics[width=0.5\textwidth]{prism.png}
@@ -133,7 +133,7 @@ De tre typerna är:
     \item Sfärisk aberration, som beror på att ljus som når sfäriska gränsytor inte bryts på samma sätt i kanten av linsen som paraxiala strålar.
     Strålarna som når kanten får en kortare brännvidd \cite[p.238]{vl}. Se figur \ref{fig:got}g.
     \item Kromatisk aberration, som beror på att glas med samma brytningsindex inte bryter ljus med olika våglängd
-    likadant. Varje våglängd får därmed en egen fokalpunkt och bilden blir utsmetad  \cite[p.237]{vl}. Se figur \ref{fig:got}h.
+    likadant. Varje våglängd får därmed en egen fokalpunkt och bilden blir ofokuserad  \cite[p.237]{vl}. Se figur \ref{fig:got}h.
 \end{itemize}
 \section{Material och metod}
 Det fysiska materialet för denna laboration har endast varit en dator. Programvaran som tillhandahölls
@@ -148,11 +148,11 @@ resultat iakttogs och sedan dokumenterades uppställningen genom att ta en skär
 För att mäta avlänkningsvinkeln i prismat användes programmet MB-Ruler som är en digital linjal
 som kan mäta vinklar och avstånd på skärmen.
 
-I just denna laboration placerades en lins framför en divergent ljusstråle. Den flyttades och roterades och undersöktes.
+I just denna laboration placerades en lins framför en divergent ljuskälla i GOT. Den flyttades och roterades och undersöktes.
 Sedan placerades ett prisma ut som roterades för att mäta avlänkningsvinkel. 
 \section{Resultat}
 \subsection{Beräkning av divergens} \label{div}
-Jag valde två punkter och avståndet $d_1 = 9.28, d_2 = 5.40, l = 7$.
+Jag valde två punkter och avståndet $d_1 = 9.28$ l.e., $d_2 = 5.40$ l.e., $l = 7$ l.e.
 Insättning i ekvation \ref{eq: div} gav en vinkel $\theta = \ang{31.28}$.
 
 \subsection{Mätvärden från prismat}
@@ -201,8 +201,8 @@ Insättning i ekvation \ref{eq: div} gav en vinkel $\theta = \ang{31.28}$.
     \subfloat[Lins förskjuten i planet]{\includegraphics[width = 3in]{skev.jpg}}\\
     \subfloat[Ungefär samma avstånd till källan som brännpunkten.]{\includegraphics[width = 3in]{lika.jpg}} &
     \subfloat[Koma, ljuset kommer in snett och "smetas ut"]{\includegraphics[width = 3in]{koma.jpg}}\\
-    \subfloat[Sfärisk abherration, allt ljus fokuseras inte i brännpunkten.]{\includegraphics[width = 3in]{sphabherr.jpg}} &
-    \subfloat[Kromatisk abherration, olika väglängder fokuseras på olika brännpunkter.]{\includegraphics[width = 3in]{kromabherr.jpg}} \\
+    \subfloat[Sfärisk aberration, allt ljus fokuseras inte i brännpunkten.]{\includegraphics[width = 3in]{sphabherr.jpg}} &
+    \subfloat[Kromatisk aberration, olika väglängder fokuseras på olika brännpunkter.]{\includegraphics[width = 3in]{kromabherr.jpg}} \\
     \subfloat[Skarp brännpunkt]{\includegraphics[width = 3in]{goodfocus.jpg}} &
     \subfloat[Oskarp brännpunkt]{\includegraphics[width = 3in]{badfocus.jpg}} \\
     \subfloat[Totalreflektion i en rektangulär komponent.]{\includegraphics[width = 3in]{total.jpg}} 
@@ -219,9 +219,9 @@ Inledningsvis kan vi etablera att divergensvinkeln som beräknas i sektion \ref{
 
 Efter noggrann undersökning kan man dra en del slutsatser om hur en lins beter sig. Det som kunde iakttas var att
 ju närmare linsen placeras till ljuskällan, ju större blir brännvidden, för att till slut bli oändlig. Då får vi
-parallella strålar från en divergent ljuskälla. Detta demonstreras i resultatet av figur \ref{fig:got}a. 
+parallella strålar från en divergent ljuskälla. Detta demonstreras i resultatet, figur \ref{fig:got}a. 
 När vi istället placerar linsen långt ifrån ljusskällan får vi motsatt effekt, brännvidden minskar, och strålarna
-fokuseras i en brännpunkt. Brännpunkten kom närmare linsen ju längre bort linsen var från ljusskällan. Se figur \ref{fig:got}b.
+fokuseras i en brännpunkt. Brännpunkten kommer närmare linsen ju längre bort linsen placeras från ljusskällan. Se figur \ref{fig:got}b.
 
 Rotation och förflyttning av linsen gav liknande resultat. En rotation av linsen förskjöt bränn-
 punkten uppåt eller nedåt, om än lite. Se figur \ref{fig:got}c. Samtidigt bryts inte alla strålar i samma plan och brännpunkten
@@ -240,20 +240,20 @@ fel rent intuitivt med tanke på att avståndet mellan lins och brännpunkt bord
 
 Sedan återskapades tre avbildningsfel med hjälp av GOT, sfärisk aberration, koma och kromatisk aberration. Resultatet från dessa undersökningar
 återfinns i figurer \ref{fig:got}f-h. Det syns tydligt att ljusstrålarna böjs av mer när de propagerar genom linsens kant, jämfört med propagation
-genom linsens mitt, den "tjockare" delen, alltså uppstår sfärisk aberration i figur \ref{fig:got}f. Samtidigt syns förskjutningen och defokuseringen
-av fokalpunkten tydligt i figur \ref{fig:got}g, när ljuset kommer in snett mot den optiska axeln, där ett koma uppstår. Likaså syns det, om inte lika 
+genom linsens mitt, den "tjockare" delen, alltså uppstår sfärisk aberration i figur \ref{fig:got}g. Samtidigt syns förskjutningen och defokuseringen
+av fokalpunkten tydligt i figur \ref{fig:got}f, när ljuset kommer in snett mot den optiska axeln, där ett koma uppstår. Likaså syns det, om inte lika 
 tydligt att brännpunkten förskjuts beroende på ljusets våglängd i figur \ref{fig:got}h, då kromatisk aberration uppstår.
 
 Har man en plankonvex lins är det bättre att placera den konvexa sidan mot ljuskällan, jämför figurer \ref{fig:got}i och \ref{fig:got}j. Då motverkas
 sfärisk aberration och fokalpunkten blir skarp. Anledningen till att sfärisk aberration motverkas skulle jag gissa på är att ljuset i detta fall bryts 
-när det äntrar linsen, vilket leder till att sfärisk aberration inte uppstår.
+när det äntrar linsen, och endast en gång, vilket leder till att sfärisk aberration inte uppstår.
 
 \subsection{Prismat}
 Vad gäller prismat togs ett tiotal mätvärden, för två våglängder, $\lambda_1=\SI{555}{\nano\meter}$ och $\lambda_2=\SI{700}{\nano\meter}$.
 Dessa återfinns i tabell \ref{tb:555} och \ref{tb:700}. Mätvärdena plottades i MATLAB och för att skapa en kontinuerlig avlänkningskurva
 valde jag att anpassa tredjegradspolynom till mätdatan. Plotten och kurvorna syns i figur \ref{fig: plot}. Att göra denna anpassningen
 fungerade bra för $\lambda_1$ men inte riktigt lika bra för $\lambda_2$. Antagligen hade jag bara tur i anpassningen. Med hjälp av dessa
-anpassade kurvor sökte jag sedan minsta avlänkningsvinkel numeriskt och fick ut att minsta avlänkningsvinkel, $\delta_1 = \ang{64.0680}$
+anpassade kurvor sökte jag sedan minsta avlänkningsvinkel numeriskt och fick ut minsta deviation $\delta_1 = \ang{64.0680}$
 för $\lambda_1$ och $\delta_2 = \ang{57.5861}$ för $\lambda_2$. Detta resultat kan diskuteras på två sätt: rimligheten hos resulatet och
 rimligheten hos metoden som användes för att få fram resulatet. Vi börjar med det förstnämnda.
 
@@ -342,7 +342,7 @@ Genom att placera linsen nära ljuskällan ser vi till att brännvidden blir oä
 \end{figure}
 \subsection{Linjering}
 Att linjera lasern innebär att man tar en parallelliserad ljuskälla, exempelvis en laserstråle och ser till att det går igenom två bländare med rakast möjliga väg.
-Detta görs genom att placera ut två speglar, en så nära den första bländaren som möjligt, och en så att ljusstrålen böjs ned mot den andra spegeln. Se figur \ref{fig:linjering}
+Detta görs genom att placera ut två speglar, en så nära den första bländaren som möjligt, och en så att ljusstrålen böjs ned mot den andra spegeln. Se figur \ref{fig:linjering}.
 Sedan justeras spegel 1 i figuren så att ljuset passerar igenom första bländaren så centralt som möjligt. Sedan används spegel 2 för att se till att hela ljusstrålen passerar
 genom den vänstra bländaren \cite{yt2}.
 \begin{figure}[h]
