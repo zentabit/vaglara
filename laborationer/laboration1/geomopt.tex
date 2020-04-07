@@ -20,7 +20,7 @@
 \begin{titlepage}
 	\centering
 	\includegraphics[width=0.15\textwidth]{logo.png}\par\vspace{1cm}
-	{\scshape\large Lunds Universitet \par}
+	{\scshape\large Lunds Tekniska Högskola \par}
 	\vspace{1cm}
     {\scshape\large FAFF30 Våglära och optik\par}
 	\vspace{1.5cm}
@@ -39,8 +39,7 @@
 
 \section{Inledning}
 \subsection{Introduktion och sammanfattning}
-I denna laboration har två optiska komponenters egenskaper och karaktäristik undersökts. Under laborationen har prismor
-och linser undersökts. Därutöver har kollimering och linjering diskuterats och beskrivits. Hela den experimentella delen har genomförts
+I denna laboration har två optiska komponenters (linser och prismor) egenskaper och karaktäristik undersökts. Därutöver har kollimering och linjering diskuterats och beskrivits. Hela den experimentella delen har genomförts
 digitalt i programmet Geometrical Optics Tool, skrivet av en tidigare student. Prismor och linser är optiska komponenter
 som spelar en viktig roll i vår vardag, exempelvis i kameror, glasögon, luppar med mera. Därför finns det god motivation 
 till att genomföra en laboration likt denna för att förstå optiska komponenters egenskaper.
@@ -57,8 +56,8 @@ och drabbas lätt av avbildningsfel. Prismat hade i vårt fall hade en minsta de
 \subsection{Introduktionsuppgifter}
 För uppgift 1, se appendix A om kollimering och linjering. 
 Uppgift 2 beskrivs här nedan.
-Använder formlen för minimiavlänkning, ekvation \ref{eq: avl}\cite[p. 212]{vl}, där $n$ är brytningsindex i materialet, $\delta$ är avlänkningsvinkeln och 
-$\alpha$ är vinkeln mellan de brytande ytorna i prismat.
+Använder formeln för minimiavlänkning, ekvation \ref{eq: avl}\cite[p. 212]{vl}, där $n$ är brytningsindex i materialet, $\delta$ är avlänkningsvinkeln och 
+$\alpha$ är vinkeln mellan de brytande ytorna i prismat
 \begin{equation}
     \label{eq: avl}
     n = \frac{sin(\frac{\delta +\alpha}{2})}{sin(\frac{\alpha}{2})}
@@ -97,7 +96,7 @@ där varje gränsyta följer Snells brytningslag, ekvation \ref{eq:brytning}\cit
 \end{equation}
 Varje gång en ljusstråle passerar igenom en gränsyta bryts det. I vårt fall bryts det mot normalen när det äntrar prismat, eftersom prismat är av glas och vi antar luft utanför.
 När det sedan lämnar prismat bryts det bort från normalen. Detta resulterar i att ljuset böjs av en viss vinkel jämfört med den ursprungliga riktningen. Denna vinkel kallas
-avlänkningsvinkeln, eller deviationen, som vi betecknar med $\delta$ . Den brytande kanten på prismat får också en egen vinkel, $\alpha$. Se figur \ref{fig:prism}.
+avlänkningsvinkeln, eller deviationen, som vi betecknar med $\delta$. Den brytande kanten på prismat får också en egen vinkel, $\alpha$. Se figur \ref{fig:prism}.
 \begin{figure}[h!]
     \centering
     \includegraphics[width=0.5\textwidth]{prism.png}
@@ -132,24 +131,29 @@ De tre typerna är:
     avbildning på andra sidan linsen \cite{ins}. Se figur \ref{fig:got}f.
     \item Sfärisk aberration, som beror på att ljus som når sfäriska gränsytor inte bryts på samma sätt i kanten av linsen som paraxiala strålar.
     Strålarna som når kanten får en kortare brännvidd \cite[p.238]{vl}. Se figur \ref{fig:got}g.
-    \item Kromatisk aberration, som beror på att glas med samma brytningsindex inte bryter ljus med olika våglängd
-    likadant. Varje våglängd får därmed en egen fokalpunkt och bilden blir ofokuserad  \cite[p.237]{vl}. Se figur \ref{fig:got}h.
+    \item Kromatisk aberration, som beror på att glas med samma egenskaper inte bryter ljus med olika våglängd
+    likadant, det blir olika brytningsindex. Varje våglängd får därmed en egen fokalpunkt och bilden blir ofokuserad  \cite[p.237]{vl}. Se figur \ref{fig:got}h.
 \end{itemize}
 \section{Material och metod}
 Det fysiska materialet för denna laboration har endast varit en dator. Programvaran som tillhandahölls
-av institution är Geometric Optics Tool för analys av optiska komponenter och MATLAB för dataanalys. 
+av institution är Geometrical Optics Tool för analys av optiska komponenter och MATLAB för dataanalys. 
 Dessa program erbjöds av institutionen och därför fanns inte så mycket annat att välja på. För mätning
 av vinklar på skärmen användes programmet MB-Ruler eftersom det var lättillgängligt och gratis.
 
 Arbetssättet i Geometrical Optics Tool (hädanefter förkortat som GOT) liknade det det skulle gjort
-i en verklig laborationssal. Uppställningen sattes upp enligt instruktioner i programmet, 
-resultat iakttogs och sedan dokumenterades uppställningen genom att ta en skärmdump av akutell uppställning.
-
-För att mäta avlänkningsvinkeln i prismat användes programmet MB-Ruler som är en digital linjal
+i en verklig laborationssal. Uppställningen sattes upp enligt instruktioner i laborationshandledningen, 
+resultat iakttogs och sedan dokumenterades uppställningen genom att ta en skärmdump av akutell uppställning. För att mäta avlänkningsvinkeln i prismat användes programmet MB-Ruler som är en digital linjal
 som kan mäta vinklar och avstånd på skärmen.
 
-I just denna laboration placerades en lins framför en divergent ljuskälla i GOT. Den flyttades och roterades och undersöktes.
-Sedan placerades ett prisma ut som roterades för att mäta avlänkningsvinkel. 
+I just denna laboration placerades en konvex lins framför en divergent ljuskälla (inladdad från en fil) i GOT. Den flyttades och roterades på olika sätt (se handledningen)
+och mellan varje förändring togs en skärmdump samtidigt som resulatet som varje förändring gav upphov till noterades. Ljuskällan kollimerades (se appendix A)
+och därefter linjerades en kollimerad ljuskälla (inladdad från fil), se appendix A. För att illustrera de olika avbildningsfelen återskapades
+de förhållanden som krävs för att dessa skall uppstå. Se avsnitt 2.3. En skärmdump togs för varje avbildningsfel och resultatet noterades.
+
+Sedan placerades ett prisma samt en ensam ljusstråle ut för att mäta minsta deviation. Ljus-strålen placerades helt horisontellt. Prismat roterades ungefär
+\ang{10} mellan varje mätning, sedan användes skärmlinjalen för att mäta vinkeln mellan den horisontella inkommande ljusstrålen och den utgående
+brutna ljusstrålen. Den inkommande strålens vinkel mot prismat avlästes i GOT. Resultatet noterades i en tabell. Detta gjordes två gånger, med ljusets våglängd 555 nm och 700 nm.
+Slutligen konstruerades totalreflektion enligt handledningen med en rektangulär glasbit.
 \section{Resultat}
 \subsection{Beräkning av divergens} \label{div}
 Jag valde två punkter och avståndet $d_1 = 9.28$ l.e., $d_2 = 5.40$ l.e., $l = 7$ l.e.
@@ -214,8 +218,9 @@ Insättning i ekvation \ref{eq: div} gav en vinkel $\theta = \ang{31.28}$.
 \pagebreak
 
 \section{Diskussion och slutsatser}
+Inledningsvis kan det nämnas att totalreflektion, figur \ref{fig:got}k, kunde iakttas och resultatet är rimligt.
 \subsection{Linser}
-Inledningsvis kan vi etablera att divergensvinkeln som beräknas i sektion \ref{div} är rimlig.
+Vi kan etablera att divergensvinkeln som beräknas i sektion \ref{div} är rimlig (jämfört med blotta ögat).
 
 Efter noggrann undersökning kan man dra en del slutsatser om hur en lins beter sig. Det som kunde iakttas var att
 ju närmare linsen placeras till ljuskällan, ju större blir brännvidden, för att till slut bli oändlig. Då får vi
@@ -289,7 +294,7 @@ resultatet. Anledningen till varför det inte kan stämma kan bero på det jag s
 \subsubsection{Rimlighetsbedömning av metoden}
 Nu övergår diskussionen till huruvida metoden jag använde för att beräkna minsta avlänkningsvinkel är rimlig, om det finns något
 att förbättra med den och i så fall, vad. Inledningsvis kan det nämnas att anledningen till att jag valde att anpassa just ett tredjegradspolynom
-var att ett andragradspolynom gav ännu sämre anpassning, och ett fjärdegradspolynom gav ett orimligt utseende på kurvan. Självklart är inte sambandet
+var att ett andragrads-polynom gav ännu sämre anpassning, och ett fjärdegradspolynom gav ett orimligt utseende på kurvan. Självklart är inte sambandet
 mellan infallsvinkel och anvlänkningsvinkel ett polynom, utan en komplicerad trigonometrisk funktion. Givetvis skulle man kunna anpassa
 en sådan funktion till mätvärdena, men MATLAB har ingen sådan funktion inbyggd så det skulle vara alltför tidskrävande att göra det manuellt i detta fall.
 
