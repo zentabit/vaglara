@@ -6,7 +6,7 @@ n = 1.5;
 % h??rledd f??r hand + s211 i boken
 d = @(x) x + asin(n.*sin(a - asin(sin(x)./n))) - a;
 
-x = linspace(0, pi/2);
+x = linspace(-pi/2, pi/2);
 y = d(x);
 
 plot(x,y)
@@ -14,7 +14,7 @@ plot(x,y)
 %% b uppgift
 % zinkdopat kronglas
 a1 = 1.517;
-a2 = 10.72;
+a2 = 200;
 
 % tungt flintglas
 b1 = 1.653;
@@ -41,11 +41,11 @@ z2 = d1(x, ms(2));
 z3 = d1(x, ms(3));
 z4 = d1(x, ms(4));
 
-tiledlayout(2,1)
+tiledlayout(2,1);
 ax1 = nexttile;
-ax1.Title.String = "Zinkdopat kronglas"
-ax1.XLabel.String = "Infallsvinkel \theta rad"
-ax1.YLabel.String = "Avl?nkningsvinkel \delta rad"
+ax1.Title.String = "Zinkdopat kronglas";
+ax1.XLabel.String = "Infallsvinkel \theta rad";
+ax1.YLabel.String = "Avl?nkningsvinkel \delta rad";
 hold on
 plot(x, y1, 'b-')
 plot(x, y2, 'g-')
@@ -54,9 +54,9 @@ plot(x, y4, 'r-')
 hold off
 
 ax2 = nexttile;
-ax2.Title.String = "Tungt flintglas"
-ax2.XLabel.String = "Infallsvinkel \theta rad"
-ax2.YLabel.String = "Avl?nkningsvinkel \delta rad"
+ax2.Title.String = "Tungt flintglas";
+ax2.XLabel.String = "Infallsvinkel \theta rad";
+ax2.YLabel.String = "Avl?nkningsvinkel \delta rad";
 hold on
 plot(x, z1, 'b-')
 plot(x, z2, 'g-')
