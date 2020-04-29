@@ -1,0 +1,20 @@
+fs = 1000;
+t = 0:(1/fs):(10-1/fs);
+n = 100;
+S = zeros(1, n)
+
+S(47:49) = 1;
+S(51:53) = 1;
+%S(800:900) = 0;
+X = fft(S);
+
+f = (0:n-1)*(fs/n);
+pow = abs(X.^2);
+%plot(f, pow)
+
+Y = fftshift(X);
+fs = (-n/2:n/2-1)*(fs/n);
+pows = abs(Y.^2);
+
+plot(fs, pows)
+%axis([ -10 10 0 20]);
