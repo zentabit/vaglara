@@ -39,8 +39,8 @@
 
 \section{Inledning}
 Länge har det diskuterats om ljuset har våg- eller partikelnatur. Diskussionen har pågått i flera hundra år och man är fortfarande inte helt överens kring vilket det är,
-utan accepterar istället att ljuset uppvisar både våg- och partikelegenskaper. I denna laboration har fenomenet diffraktion(även känt som böjning) studerats, vilket är 
-ett typiskt vågfenomen. Det innebär att alla resultat som åstadkommits i laborationen tyder på att ljus iallafall definitivt är en våg. Alla uppställningar har gjorts med en
+utan accepterar istället att ljuset uppvisar både våg- och partikelegenskaper. I denna laboration har fenomenet diffraktion (även känt som böjning) studerats, vilket är 
+ett typiskt vågfenomen. Det innebär att alla resultat som åstadkommits i laborationen tyder på att ljus definitivt är en våg. Alla uppställningar har gjorts med en
 röd, koherent, monokromatisk laser med våglängden $\lambda = \SI{641.3}{\nano\meter}$.
 
 \section{Sammanfattning av laborationen}
@@ -54,15 +54,15 @@ Ljuset från lasern kollimerades och två speglar placerades i strålgången fö
 \end{figure}
 
 \subsubsection{Dubbelspalt}
-Som första delen av laborationen placerades en dubbelspalt i den kollimerade ljusstrålen. På en skärm ca 1 m längre bort iakttogs ett typiskt interferensmönster, se figur \ref{fig:dubbelspalt}.
+I den första delen av laborationen placerades en dubbelspalt i den kollimerade ljusstrålen. På en skärm ca 1 m längre bort iakttogs ett typiskt interferensmönster, se figur \ref{fig:dubbelspalt}.
 \begin{figure}[h!]
 \centering
 \includegraphics[width=\textwidth]{2spalt.jpg}
 \caption{Interferens med dubbelspalt}
 \label{fig:dubbelspalt}
 \end{figure}
-Uppgiften var sedan att beräkna spaltavståndet hos dubbelspalten, vilket gjordes med ekvation \ref{eq:dubbelspalt} genom att lösa ut $d$. Avståndet till skärmen mättes och ett
-medelvärde togs, samt avståndet mellan två maxima av samma ordning, mätvärdena redovisas i tabell \ref{table:dubbel}. Med detta kunde spaltavståndet räknas ut, och medelvärdet
+Uppgiften var sedan att beräkna spaltavståndet hos dubbelspalten, vilket gjordes med ekvation \ref{eq:dubbelspalt} (beteckningar enligt tabell \ref{table:dubbel}) genom att lösa ut $d$. Avståndet till skärmen mättes och ett
+medelvärde togs, samt avståndet mellan två maxima av samma ordning, mätvärdena redovisas i tabell \ref{table:dubbel}. Med detta kunde spaltavståndet räknas ut, och medelvärdet för spaltbredden
 var $\SI{0.27}{\milli\meter}$.
 \begin{equation}
 	d sin(\theta) = m\lambda, m \in Z
@@ -80,14 +80,14 @@ var $\SI{0.27}{\milli\meter}$.
 	\caption{Mätvärdena från dubbelspalten}
 	\label{table:dubbel}
 \end{table}
-Mönstret kan förklaras genom att de två smala spalterna fungerar som punktkällor för den inkommande vågen. Dessa punktkällors vågor adderas i överallt efter spalterna, och där
+Mönstret kan förklaras genom att de två smala spalterna fungerar som punktkällor för den inkommande plana vågen. Dessa punktkällors vågor adderas i alla punkter efter spalterna, och där
 väglängdskillnaden är en hel multipel av våglängden får vi maxima (vågorna interfererar i fas), och där väglängdskillnaden är en multipel av en halv våglängd fås minima 
-(vågorna interfererar ur fas). Att mönstret blir svagare i kanterna beror på att även böjning sker i denna situation och fungerar som ett
+(vågorna interfererar ur fas). Att mönstret blir svagare i kanterna beror på att även diffraktion sker i denna situation och fungerar som ett
 "envelope" till interferensmönstret. Detta gäller för alla flerspaltsystem.
 
 \subsubsection{Enkelspalt}
-Dubbelspalten byttes ut mot en enkelspalt, och nu skulle istället spaltbredden beräknas, med hjälp av ekvationen för diffraktionsminima, ekvation \ref{eq:enkelspalt}.
-Mätvärden togs, enligt tabell \ref{table:enkelspalt}. 
+Dubbelspalten byttes ut mot en enkelspalt, och nu skulle istället spaltbredden beräknas, med hjälp av ekvationen för diffraktionsminima, ekvation \ref{eq:enkelspalt}, med
+beteckningar enligt tabell \ref{table:enkelspalt}. Mätvärden togs, enligt tabell \ref{table:enkelspalt}. 
 \begin{equation}
 	b sin(\theta) = m\lambda, m \in Z
 	\label{eq:enkelspalt}
@@ -105,8 +105,9 @@ Mätvärden togs, enligt tabell \ref{table:enkelspalt}.
 	\label{table:enkelspalt}
 \end{table}
 Mönstret som uppstod visas i figur \ref{fig:enkelspalt}. Enkelspaltens mönster förklaras på grund av fasskillnaden som
-uppstår mellan alla punktkällor som skapas i spaltöppningen när de når en skärm. På vissa punkter träffar alla elementarvågor
-varandra i fas (exempelvis i huvudmaximum), och på andra ställen möts de ur fas och släcker ut varandra.
+uppstår mellan alla punktkällor som skapas i spaltöppningen (som är förhållandevis bred jämfört med ljusets våglängd) 
+när de når en skärm. På vissa punkter träffar alla elementarvågor varandra i fas (exempelvis i huvudmaximum), 
+och på andra ställen möts de ur fas och släcker ut varandra.
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=\textwidth]{1spalt.jpg}
@@ -123,9 +124,10 @@ varandra i fas (exempelvis i huvudmaximum), och på andra ställen möts de ur f
 \end{figure}
 I denna del placerades strålen precis i gränsområdet mellan en tråd och spalt. Babinets princip gäller vilket innebär att
 de två hindrena är komplementära och bildar samma diffraktionsmönster på skärmen. Enligt pricipen blir de två vågsystemen från
-spalten respektive tråden i motfas och amplituderna släcker ut varandra där de möts. Eftersom hindrena är komplementära kan man tänka
+spalten respektive tråden i motfas och amplituderna släcker ut varandra där de möts, detta är den mörka randen i mitten i figur \ref{fig:babinet}. 
+Eftersom hindrena är komplementära kan man tänka
 sig att kombinationen av de två inte borde leda till något ljus alls (alltså att det skulle bli mörkt om en spalt och tråd placerades på samma ställe)
-vilket också förklarar fenomenet.
+vilket också troliggör randen i mitten.
 \subsubsection{Flerspaltsystem}
 \begin{figure}[h!]
 	\centering
@@ -148,7 +150,9 @@ vilket också förklarar fenomenet.
 \end{figure}
 Därefter placerades ett tre-, fyr- och femspaltssystem i ljusstrålen. Även dessa system vållar interferensmönster (likt dubbelspalten, figur \ref{eq:dubbelspalt}) 
 mellan punktkällor, men eftersom vi ökar antalet källor uppstår även andra intressanta bieffekter. Vi behåller de ljusaste maxima, som nu kallas huvudmaxima, på
-samma plats, men de blir ljusare och smalare ju fler spalter vi har. Att de blir smalare måste innebära att de blir ljusare eftersom energin måste ta vägen någonstans.
+samma plats, men de blir ljusare och smalare ju fler spalter vi har. Spalterna blir smalare eftersom det blir fler vågor som måste mötas precis i fas för att
+total konstruktiv interferens skall uppstå. Att de blir smalare måste innebära att de blir ljusare eftersom energin måste ta vägen någonstans.
+
 Den största skillnaden är att här även uppstår bimaxima, ljusa fläckar mellan huvudmaxima. Detta beror på att fasskillnaden mellan de inkommande vågorna blir sådan att vissa vågor släcker ut varandra, men inte alla. Därför når fortfarande en del av 
 intensiteten fram. Där vågorna råkar vara helt i motfas får vi återigen minima, men de blir fler. Vi får $N-2$ bimax och $N-1$ minima, där $N$ är antalet spalter.
 Detta är alltså antalet fasförskjutningar mellan elementarvågorna som råkar skapa (delvis) utsläckning. 
@@ -156,7 +160,7 @@ Detta är alltså antalet fasförskjutningar mellan elementarvågorna som råkar
 Dessa effekter kan iakttas i figurerna \ref{fig:3spalt}, \ref{fig:4spalt} och \ref{fig:5spalt}. 
 \subsection{Fresneldiffraktion}
 När den kollimerande linsen sedan tas bort från ljuskällan så att den blir divergent kan man iaktta Fresneldiffraktion. Den
-analytiska modellen är något avancerad(kräver en del vektoraddition) så jag förutsätter en konceptuell förståelse. 
+analytiska modellen är något avancerad (kräver en del vektoraddition) så jag förutsätter en konceptuell förståelse. 
 \subsubsection{Ställbar spalt}
 \begin{figure}[h!]
 	\centering
@@ -199,7 +203,7 @@ I denna del skulle diametern på ett hål bestämmas med hjälp av fresneldiffra
 nära skärmen (så att fraunhoferdiffraktion uppstår då vi har så gott som parallella strålar, figur \ref{fig:fresnel}a) och sedan flytta hålet närmare ljuskällan
 tills det uppstår ett minimum i mitten av mönstret, figur \ref{fig:fresnel}b. Första gången detta uppstår kan man vara säker på att vi hade två fresnelzoner, då
 är fasskillnaden mellan mitten av hålet och översta kanten en hel våglängd och ljuset släcks ut helt i mitten. När hålet sedan flyttas närmare ljuskällan blir centrum
-av skuggan alternerande ljus och mörk, och man vet att man nått nästa fresnelzon. Tre fresnelzoner ger ljus prick i mitten (figur \ref{fig:fresnel}c) och fyra ger återigen
+av skuggan alternerande ljust och mörkt, och man vet att man nått nästa fresnelzon. Tre fresnelzoner ger ljus prick i mitten (figur \ref{fig:fresnel}c) och fyra ger återigen
 mörk, då fasskillnaden är en hel multipel(2) av våglängden (figur \ref{fig:fresnel}d).
 \begin{figure}[h!]
 	\centering
