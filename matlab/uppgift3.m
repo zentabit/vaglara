@@ -1,18 +1,22 @@
 %% del 1
+% skapa en tidsvektor och de tre olika y-vektorerna
 t = linspace(0, 4*pi, 1000);
 x = zeros(1, length(t));
 y = zeros(1, length(t));
 z = zeros(1, length(t));
+% maximala udda talet vi skall iterera till
 maxn = 10001;
 
+% summera alla sinusfunktioner enligt reglerna
+% fyrkant
 for i = 1:2:maxn
     x = x + 1/i*sin(i.*t);
 end
-
+% triangel
 for i = 1:2:maxn
     y = y + ((-1)^((i-1)/2))/(i^2)*sin(i.*t);
 end
-
+% s?gtand
 for i = 1:maxn
     z = z + 1/i*sin(i.*t);
 end
@@ -33,6 +37,7 @@ title("Sinus");
 %% del 2
 % antalet datapunkter
 n = 1024;
+% skapa en  tom vektor med nollor
 S = zeros(1, n);
 
 spalts = 3;
