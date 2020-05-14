@@ -1,5 +1,7 @@
 \documentclass[a4paper]{article}
 \usepackage[a4paper, total={6in, 9in}]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{bookman}
 \usepackage{amsmath}
 \usepackage{csvsimple}
 \usepackage{graphicx}
@@ -64,7 +66,7 @@ Glass, for example, is amorphous, and the atoms are randomly distributed. Light 
 has the same refractive index for all polarisations of light. 
 
 Some materials (e.g crystals) are organised in such a way that it is harder to oscillate the electrons in
-some directions than other. This means the same material has two different refractive indexes depending on the polarisation of the incident light, and this is called birefringence
+some directions than other. This means the same material has two different refractive indices depending on the polarisation of the incident light, and this is called birefringence
 (sv. dubbelbrytning). 
 
 If two axes are chosen, called the ordinary and the extraordinary axis, one may define two refraction indices for linearly polarised light incident on these
@@ -72,8 +74,30 @@ axes. If the refraction index along the ordinary axis is called $n_o$, and along
 $\Delta n = n_e - n_o$.
 
 \subsubsection{Unpolarised light}
-
+In unpolarised light the electric field is oscillating in all possible directions perpendicular to the propagation direction. In a birefringent crystal the refraction index in the 
+extraordinary direction $n_e$ is depedent on the polarisation direction of the incident electric field. When light enters the crystal, it is refracted at different angles depending
+on the polarisation. This leads to the unpolarised beam being split into two beams when it exits the crystal\cite{wiki}.
 \subsubsection{Reflective grating}
+Using the equation for reflective diffraction gratings, equation \ref{eq:diffgrat}, we can see that all necessary values are given, in table \ref{tab:values}.
+\begin{equation}
+    d(sin(\alpha_2) - sin(\alpha_1)) = m\lambda, m \in Z
+    \label{eq:diffgrat}
+\end{equation}
+
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{|l|l|}
+    \hline
+    Variable & Value                    \\ \hline
+    $\lambda$       & 550 nm                   \\ \hline
+    m        & 1 (first spectral order) \\ \hline
+    d        & 1/300 mm                 \\ \hline
+    $\alpha_1$ & $\ang{15}$             \\ \hline
+    \end{tabular}
+    \caption{Given values in the problem}
+    \label{tab:values}
+\end{table}
+Substituting these values into equation \ref{eq:diffgrat} and solving for $\alpha_2$ gives $\ang{25}$ compared to the normal, which is reasonable.
 \pagebreak
 \section{Birefringence and difference in refraction index}
 In this part, we were tasked with finding the difference in refraction index between the ordinary and extraordinary axes in a quartz crystal. The crytal was $d=\SI{3}{\milli\meter}$
