@@ -69,7 +69,7 @@ Some materials (e.g crystals) are organised in such a way that it is harder to o
 some directions than other. This means the same material has two different refractive indices depending on the polarisation of the incident light, and this is called birefringence
 (sv. dubbelbrytning). 
 
-If two axes are chosen, called the ordinary and the extraordinary axis, one may define two refraction indices for linearly polarised light incident on these
+If two axes are chosen, called the ordinary (where Snell's law holds) and the extraordinary axis (perpendicular to the ordinary), one may define two refraction indices for light incident on these
 axes. If the refraction index along the ordinary axis is called $n_o$, and along the extraordinary axis $n_e$, the difference between refractive indices can be determined,
 $\Delta n = n_e - n_o$.
 
@@ -123,7 +123,7 @@ $\lambda_3$ the third, $q$ maximas away from the first.
     q                         & 16       \\ \hline
     \end{tabular}
 \end{table}
-The difference in refractive index $\Delta n = n_e - n_o$ is given by Cauchys formula, equation \ref{eq:cauchy}. Combining this with the criterium for maximum for the crystal gave us a system
+The difference in refractive index $\Delta n = n_e - n_o$ is given by Cauchys formula, equation \ref{eq:cauchy}. Combining this with the criterium for interference maximum for the crystal gave us a system
 of equations, \ref{eq:system}.
 \begin{equation}
     \Delta n(\lambda) = A + \frac{B}{\lambda^2}
@@ -153,4 +153,9 @@ The difference in values can be attributed to the simple model used for the wave
     \bibitem{wiki}
     Wikipedia. Birefringence. Accessed 2020-05-12. Available at \url{https://en.wikipedia.org/wiki/Birefringence}
 \end{thebibliography}
+
+\section{Appendix}
+Spectrum data for parallel polarisers, available at \url{https://github.com/zentabit/vaglara/blob/master/laborationer/laboration3/Spectrum_parallel_pol.m} \\ \\
+Scripts used for solving the system of equations, available at \url{https://github.com/zentabit/vaglara/blob/master/laborationer/laboration3/root3d.m} and 
+\url{https://github.com/zentabit/vaglara/blob/master/laborationer/laboration3/solveeq.m}
 \end{document}
